@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EditKaro — Video Editor | Showreel & Portfolio</title>
+  <meta name="description" content="EditKaro — Professional video editor. Showreel, portfolio, services and contact." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="EditKaro — Video Editor" />
+  <meta property="og:description" content="Showreel and portfolio of EditKaro, video editor." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="thumbnail.jpg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">EditKaro</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#showreel">Showreel</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#contact">Book a Call</a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-heading">I craft cinematic edits & storytelling for brands</h1>
+          <p>Hi, I’m EditKaro — a freelance video editor specializing in commercials, short-form social, documentaries and music videos.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#showreel">Watch Showreel</a>
+            <a class="btn btn-outline" href="EditKaro-Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- inline lightweight showreel preview (poster image recommended) -->
+          <video controls preload="metadata" poster="poster-showreel.jpg" class="showreel-preview" aria-label="showreel preview">
+            <source src="showreel.mp4" type="video/mp4">
+            Your browser doesn't support HTML5 video. <a href="#showreel">Open showreel</a>.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWREEL -->
+    <section id="showreel" class="section">
+      <div class="container">
+        <h2>Showreel</h2>
+        <p class="muted">A curated selection of my best work.</p>
+        <div class="showreel-grid">
+          <!-- Card opens lightbox; data-type = video|youtube|vimeo -->
+          <article class="video-card" tabindex="0" role="button" data-type="video" data-src="showreel.mp4" aria-label="Play full showreel">
+            <img src="poster-showreel.jpg" alt="Showreel thumbnail" loading="lazy">
+            <div class="card-overlay">
+              <span class="play">▶</span>
+            </div>
+            <h3>Showreel — 2025</h3>
+            <p class="muted">Cinematic edits, commercials & social clips</p>
+          </article>
+
+          <article class="video-card" tabindex="0" role="button" data-type="youtube" data-src="https://www.youtube.com/watch?v=VIDEO_ID">
+            <img src="thumb-youtube1.jpg" alt="YouTube project thumbnail" loading="lazy">
+            <div class="card-overlay"><span class="play">▶</span></div>
+            <h3>Brand Ad — YouTube</h3>
+            <p class="muted">60s product spot</p>
+          </article>
+
+          <article class="video-card" tabindex="0" role="button" data-type="vimeo" data-src="https://vimeo.com/VIDEO_ID">
+            <img src="thumb-vimeo1.jpg" alt="Vimeo project thumbnail" loading="lazy">
+            <div class="card-overlay"><span class="play">▶</span></div>
+            <h3>Documentary Cut</h3>
+            <p class="muted">Short documentary edit</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section light">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="muted">Pick a clip to preview.</p>
+
+        <div class="portfolio-grid">
+          <!-- Repeatable project cards -->
+          <figure class="project" tabindex="0" role="button" data-type="youtube" data-src="https://www.youtube.com/watch?v=VIDEO_ID">
+            <img src="thumb-project1.jpg" alt="Project 1 thumbnail" loading="lazy">
+            <figcaption>
+              <h3>Project Title 1</h3>
+              <p class="muted">Category · Role: Editor & Color</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project" tabindex="0" role="button" data-type="video" data-src="project2.mp4">
+            <img src="thumb-project2.jpg" alt="Project 2 thumbnail" loading="lazy">
+            <figcaption>
+              <h3>Project Title 2</h3>
+              <p class="muted">Category · Role: Editor</p>
+            </figcaption>
+          </figure>
+
+          <figure class="project" tabindex="0" role="button" data-type="vimeo" data-src="https://vimeo.com/VIDEO_ID">
+            <img src="thumb-project3.jpg" alt="Project 3 thumbnail" loading="lazy">
+            <figcaption>
+              <h3>Project Title 3</h3>
+              <p class="muted">Music video · Full edit</p>
+            </figcaption>
+          </figure>
+
+          <!-- add more -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Commercial & Ads</h3>
+            <p>Story-driven ad edits, versioning for platforms, TV/YouTube deliverables.</p>
+          </div>
+          <div class="service">
+            <h3>Social & Short Form</h3>
+            <p>Vertical edits, captions, punchy cuts for Reels, TikTok & Shorts.</p>
+          </div>
+          <div class="service">
+            <h3>Documentaries & Longform</h3>
+            <p>Transcripts, assembly, fine cut, color grade, sound design coordination.</p>
+          </div>
+          <div class="service">
+            <h3>Color & Sound</h3>
+            <p>DaVinci Resolve color grading, basic mix & deliverables for broadcast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section light">
+      <div class="container">
+        <h2>What clients say</h2>
+        <div class="testimonials">
+          <blockquote>
+            “EditKaro transformed our rough cut into a cinematic story — delivered on time and on brief.”
+            <footer>— Sarah Lee, Creative Director, BrandCo</footer>
+          </blockquote>
+
+          <blockquote>
+            “Fast, communicative and detail-oriented. We saw engagement jump after the new social edits.” 
+            <footer>— Mark Patel, Head of Growth</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact & Rates</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="muted">Available for freelance, retainer and agency work. Typical rates start at $450/day; project quotes provided on request.</p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:EditKaro@novastudio.com">EditKaro@novastudio.com</a></li>
+              <li><strong>Location:</strong> Remote — based in Mumbai, India</li>
+              <li><strong>Turnaround:</strong> 3–7 business days (depends on scope)</li>
+            </ul>
+            <p><a class="btn" href="mailto:alex@novastudio.com?subject=Film%20Edit%20Inquiry">Email me</a></p>
+          </div>
+
+          <form id="contact-form" aria-label="Contact form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" required type="text" placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" required type="email" placeholder="name@example.com">
+
+            <label for="project">Project details</label>
+            <textarea id="project" name="project" rows="5" placeholder="Brief description, budget, deadline" required></textarea>
+
+            <div class="form-row">
+              <label for="budget">Budget (approx)</label>
+              <select id="budget" name="budget">
+                <option value="">Select</option>
+                <option>$500–$1,500</option>
+                <option>$1,500–$5,000</option>
+                <option>$5,000+</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <button type="reset" class="btn btn-outline">Reset</button>
+            </div>
+            <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lb-backdrop"></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Video player">
+      <button id="lb-close" class="lb-close" aria-label="Close">✕</button>
+      <div id="lb-content" class="lb-content"></div>
+      <div class="lb-meta">
+        <button id="lb-prev" class="lb-nav" aria-label="Previous">◀</button>
+        <button id="lb-next" class="lb-nav" aria-label="Next">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> EditKaro — Video Editor. <a href="privacy.html">Privacy</a></p>
+      <nav class="socials" aria-label="Social links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Vimeo">Vimeo</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
